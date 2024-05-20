@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nagpur Land Price</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #a813b0, #cf88c0);
+        color: #000000;
+        overflow: auto;
+      }
+      
+
+      #container,h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+
+      #text {
+    max-width: 800px;
+    margin: 0 auto; /* Center align horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    font-size: large;
+    line-height: 1.6;
+    animation: slideInUp 2s ease-in-out;
+}
+
+
+      #CSVTable {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: auto;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #ef6f20;
+        color: #fff;
+      }
+
+      #imageContainer {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+        animation: scaleIn 2s ease-in-out;
+      }
+
+      .image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* animation: rotate 10s linear infinite; */
+      }
+
+      .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      #beautifulLand {
+        text-align: center;
+        margin: 20px;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInUp {
+        from {
+          transform: translateY(100px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes scaleIn {
+        from {
+          transform: scale(0.5);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes rotate {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Land Price Data</h1>
+    </div>
+    <div id="text">
+      <p>
+        Welcome to the Nagpur Land Price Data webpage, where you can explore detailed information about land prices in Nagpur city. This interactive
+        table provides a comprehensive overview of various factors influencing
+        land prices, including location, area, type of land, distance to the
+        city center, and more.
+      </p>
+      
+    </div>
+    <div id="CSVTable">
+        <table>
+            <tbody>
+              <tr>
+                <th>Location</th>
+                <th>Area</th>
+                <th>Type of Land</th>
+                <th>Distance to City Center</th>
+                <th>Accessibility</th>
+                <th>Market Trends</th>
+                <th>Zoning Regulations</th>
+                <th>Development Plans</th>
+                <th>Land Shape</th>
+                <th>Land Contour</th>
+                <th>Utilities Availability</th>
+                <th>Land Ownership Type</th>
+                <th>Neighborhood Amenities</th>
+                <th>Crime Rate</th>
+                <th>Environmental Factors</th>
+                <th>Land History</th>
+                <th>Demographic Data</th>
+                <th>Economic Indicators</th>
+                <th>Infrastructure Development</th>
+              </tr>
+              <tr>
+                <td>Dharampeth</td>
+                <td>4771</td>
+                <td>Commercial</td>
+                <td>2.648125166959847</td>
+                <td>4.113756426193682</td>
+                <td>Upward</td>
+                <td>High Density</td>
+                <td>No</td>
+                <td>Irregular</td>
+                <td>Sloping</td>
+                <td>High</td>
+                <td>Freehold</td>
+                <td>Park</td>
+                <td>2.231885069177058</td>
+                <td>Low Risk</td>
+                <td>No Historical Significance</td>
+                <td>4586.5521092353765</td>
+                <td>Stable</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>Wardha Road</td>
+                <td>1720</td>
+                <td>Commercial</td>
+                <td>8.968071997913276</td>
+                <td>9.365753720558093</td>
+                <td>Upward</td>
+                <td>Medium Density</td>
+                <td>No</td>
+                <td>Irregular</td>
+                <td>Sloping</td>
+                <td>Low</td>
+                <td>Freehold</td>
+                <td>School</td>
+                <td>4.091828767339225</td>
+                <td>High Risk</td>
+                <td>No Historical Significance</td>
+                <td>8574.666763278306</td>
+                <td>Growing</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Sadar</td>
+                <td>1037</td>
+                <td>Residential</td>
+                <td>1.3022968582642622</td>
+                <td>3.3632539303905737</td>
+                <td>Stable</td>
+                <td>Low Density</td>
+                <td>Yes</td>
+                <td>Irregular</td>
+                <td>Flat</td>
+                <td>Low</td>
+                <td>Freehold</td>
+                <td>School</td>
+                <td>3.919835527051987</td>
+                <td>High Risk</td>
+                <td>No Historical Significance</td>
+                <td>8080.575331514584</td>
+                <td>Growing</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Gandhibagh</td>
+                <td>3050</td>
+                <td>Residential</td>
+                <td>11.02753110159464</td>
+                <td>7.756864550746531</td>
+                <td>Upward</td>
+                <td>Medium Density</td>
+                <td>No</td>
+                <td>Irregular</td>
+                <td>Sloping</td>
+                <td>High</td>
+                <td>Leasehold</td>
+                <td>Park</td>
+                <td>3.7037701388623576</td>
+                <td>High Risk</td>
+                <td>Historically Significant</td>
+                <td>6767.029543394361</td>
+                <td>Stable</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>Sitabuldi</td>
+                <td>4807</td>
+                <td>Agricultural</td>
+                <td>17.507227705948363</td>
+                <td>3.2940465625462343</td>
+                <td>Upward</td>
+                <td>Low Density</td>
+                <td>No</td>
+                <td>Rectangular</td>
+                <td>Flat</td>
+                <td>High</td>
+                <td>Leasehold</td>
+                <td>School</td>
+                <td>2.489512604192087</td>
+                <td>Low Risk</td>
+                <td>Historically Significant</td>
+                <td>5464.153507453469</td>
+                <td>Growing</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>Civil Lines</td>
+                <td>1419</td>
+                <td>Industrial</td>
+                <td>7.285945737644146</td>
+                <td>8.661651276593847</td>
+                <td>Downward</td>
+                <td>Low Density</td>
+                <td>No</td>
+                <td>Irregular</td>
+                <td>Flat</td>
+                <td>Medium</td>
+                <td>Leasehold</td>
+                <td>Shopping Center</td>
+                <td>4.734115953159268</td>
+                <td>Moderate Risk</td>
+                <td>No Historical Significance</td>
+                <td>5257.502275075509</td>
+                <td>Stable</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>Nandanvan</td>
+                <td>1872</td>
+                <td>Commercial</td>
+                <td>8.465903887545991</td>
+                <td>2.56647487682409</td>
+                <td>Stable</td>
+                <td>Medium Density</td>
+                <td>Yes</td>
+                <td>Rectangular</td>
+                <td>Sloping</td>
+                <td>High</td>
+                <td>Leasehold</td>
+                <td>Shopping Center</td>
+                <td>5.03308591752451</td>
+                <td>Moderate Risk</td>
+                <td>Historically Significant</td>
+                <td>5268.112196395869</td>
+                <td>Declining</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Manish Nagar</td>
+                <td>3757</td>
+                <td>Commercial</td>
+                <td>13.81227803584014</td>
+                <td>8.116871604190434</td>
+                <td>Upward</td>
+                <td>Low Density</td>
+                <td>No</td>
+                <td>Rectangular</td>
+                <td>Sloping</td>
+                <td>High</td>
+                <td>Freehold</td>
+                <td>Park</td>
+                <td>7.974103382326154</td>
+                <td>High Risk</td>
+                <td>Historically Significant</td>
+                <td>9492.19484179236</td>
+                <td>Stable</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>Trimurti Nagar</td>
+                <td>3083</td>
+                <td>Industrial</td>
+                <td>13.774028191583431</td>
+                <td>9.438664020586945</td>
+                <td>Upward</td>
+                <td>Medium Density</td>
+                <td>No</td>
+                <td>Irregular</td>
+                <td>Sloping</td>
+                <td>High</td>
+                <td>Leasehold</td>
+                <td>Shopping Center</td>
+                <td>8.167516307042936</td>
+                <td>High Risk</td>
+                <td>Historically Significant</td>
+                <td>7640.193496297684</td>
+                <td>Declining</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>Nandanvan</td>
+                <td>4156</td>
+                <td>Residential</td>
+                <td>14.186599933015716</td>
+                <td>5.039432158400961</td>
+                <td>Upward</td>
+                <td>Medium Density</td>
+                <td>No</td>
+                <td>Irregular</td>
+                <td>Sloping</td>
+                <td>High</td>
+                <td>Leasehold</td>
+                <td>Park</td>
+                <td>5.701511152014507</td>
+                <td>Moderate Risk</td>
+                <td>No Historical Significance</td>
+                <td>1374.1570144224788</td>
+                <td>Declining</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div id="beautifulLand">
+      <h2>Discover the Beauty of Nagpur Landscapes</h2>
+      <p>Explore the breathtaking views that Nagpur has to offer:</p>
+    </div>
+    <div id="imageContainer">
+      <div class="image">
+        <img src="Safeimagekit-crop-image-to-200x200.png" alt="Beautiful Landscape 1">
+      </div>
+      <div class="image">
+        <img src="Safeimagekit-crop-image-to-200x200.png" alt="Beautiful Landscape 2">
+      </div>
+      <div class="image">
+        <img src="Safeimagekit-crop-image-to-200x200.png" alt="Beautiful Landscape 3">
+      </div>
+    </div>
+  </body>
+</html>
