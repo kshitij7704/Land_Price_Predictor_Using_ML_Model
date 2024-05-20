@@ -1,2 +1,3 @@
 # Land_Price_Predictor_Using_ML_Model
-The project will be taking into account various factors that will affect the prices of the land, and after considering them will predict the price for that land
+The project will be taking into account various factors that will affect the prices of the land, and after considering them will predict the price for that land.
+To make this project, first I have generated some fictional data due to the unavaliabilty of actual dataset, I have used numpy library to genrated some fictional dataset. Then to just demostrate that this model is capable of extracting data from a web page also by using webscrapping techniques, a fictional webpage is also created. I have also performed EDA on the dataset using pandas library. Further used matplotlib and seaborn to visualise the dataset. Finally for model creation and training sklearn library is used.
