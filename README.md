@@ -157,5 +157,5 @@ Dharampeth        2400         0.03         3.0            68.10
 ## 🧠 Author
 
 **Kshitij Kashyap**  
-_Computer Science Engineering Student_  
-🌐 [LinkedIn](https://www.linkedin.com/in/kshitijkashyap) • 💻 [GitHub](https://github.com/kshitijkashyap)
+🌐 [LinkedIn](https://www.linkedin.com/in/kshitij-kashyap-133205264/) <br>
+💻 [GitHub](https://github.com/kshitij7704)
