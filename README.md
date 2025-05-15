@@ -2,7 +2,7 @@
 
 This project predicts land prices based on various influencing factors using a Machine Learning model. It features end-to-end workflow — from data generation and web scraping to model training and prediction — built primarily using Python libraries such as **NumPy**, **pandas**, **scikit-learn**, **matplotlib**, and **seaborn**.
 
-> ⚠️ *Note: Due to the unavailability o real datasets, synthetic data has been generated for demonstration purposes.*
+> ⚠️ *Note: To further increase my understanding of NumPy and Pandas instead of real datasets, synthetic data has been generated for demonstration and understanding purposes.*
 
 ---
 
