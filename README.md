@@ -104,7 +104,7 @@ Land-Price-Predictor/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/Land-Price-Predictor.git
+   git clone https://github.com/kshitij7704/Land_Price_Predictor
    cd Land-Price-Predictor
    ```
 
