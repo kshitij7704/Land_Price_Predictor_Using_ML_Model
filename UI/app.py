@@ -48,6 +48,13 @@ st.markdown(
         background-color: #0277BD;
         color: #FFF;
     }
+    .footer {
+        text-align: center;
+        padding: 1rem;
+        color: #555;
+        font-size: 0.9rem;
+        margin-top: 3rem;
+    }
     </style>
     """,
     unsafe_allow_html=True,
@@ -101,3 +108,9 @@ if predict:
         """,
         unsafe_allow_html=True,
     )
+
+# ——— Custom Footer ———
+st.markdown(
+    '<div class="footer">Made by Kshitij Kashyap</div>',
+    unsafe_allow_html=True
+)
