@@ -1,0 +1,11 @@
+Location,Area,Type of Land,Distance to City Center,Market Trends,Zoning Regulations,Neighborhood Amenities,Crime Rate,Predicted Prices
+Manish Nagar,4971,Commercial,2.6481,Stable,High Density,Shopping Center,6.1536,2485499.9896435994
+Gittikhadan,1720,Commercial,8.9681,Upward,High Density,Park,3.4844,860000.0000000002
+Friends Colony,1037,Agricultural,1.3023,Upward,Low Density,School,5.0756,518500.0000000004
+Dharampeth,3050,Agricultural,11.0275,Stable,High Density,School,4.1768,1525000.0000000002
+Civil Lines,4807,Industrial,17.5072,Upward,Medium Density,School,6.9166,2403500.000000001
+Manewada,1419,Agricultural,7.2859,Stable,Low Density,Shopping Center,4.3332,709500.0000000002
+Chatrapati,1872,Industrial,8.4659,Upward,Low Density,Park,5.1318,936000.0000000005
+Besa,3757,Industrial,13.8123,Downward,Medium Density,School,7.4739,1878500.0000000007
+Shankar Nagar,3083,Commercial,13.774,Upward,Low Density,Park,4.7169,1541500.0000000002
+Nandanvan,4156,Agricultural,14.1866,Stable,Low Density,School,9.1578,2078000.0000000005
