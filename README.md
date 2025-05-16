@@ -1,4 +1,4 @@
-# 🏞️ Land Price Predictor Using ML Model
+# 🏞️ Real Estate Price Predictor Using ML Model
 
 This project predicts land prices based on various influencing factors using a Machine Learning model. It features end-to-end workflow — from data generation and web scraping to model training and prediction — built primarily using Python libraries such as **NumPy**, **pandas**, **scikit-learn**, **matplotlib**, and **seaborn**.
 
