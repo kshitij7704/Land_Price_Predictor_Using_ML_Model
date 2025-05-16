@@ -1,6 +1,6 @@
 # 🏞️ Real Estate Price Predictor Using ML Model
 
-This project predicts land prices based on various influencing factors using a Machine Learning model. It features end-to-end workflow — from data generation and web scraping to model training and prediction — built primarily using Python libraries such as **NumPy**, **pandas**, **scikit-learn**, **matplotlib**, and **seaborn**.
+This project predicts land prices based on various influencing factors using a Machine Learning model. It features end-to-end workflow — from data generation and web scraping to model training and prediction — built primarily using Python libraries such as **NumPy**, **pandas**, **scikit-learn**, **matplotlib**, **seaborn**, and **streamlit**.
 
 > ⚠️ *Note: To further increase my understanding of NumPy and Pandas instead of real datasets, synthetic data has been generated for demonstration and understanding purposes.*
 
@@ -11,7 +11,7 @@ This project predicts land prices based on various influencing factors using a M
 The model aims to estimate land prices by considering key attributes such as:
 - Land Area
 - Crime Rate
-- Distance from City Center
+- Location
 
 Key components of the project include:
 - Synthetic dataset creation
@@ -19,6 +19,7 @@ Key components of the project include:
 - Exploratory Data Analysis (EDA)
 - Model training and evaluation
 - Result visualization and display
+- Streamlit POC UI
 
 ---
 
@@ -51,6 +52,7 @@ Key components of the project include:
 ### 6. 🖥️ Displaying Results
 - Outputs user-friendly prediction results for selected Nagpur localities.
 - Maps values to the original data for better interpretability.
+- Using streamlit to display the results in a a user friendly format.
 
 ### 7. 📉 Exploratory Data Analysis (EDA)
 - Conducted comprehensive EDA on the generated dataset.
@@ -73,6 +75,7 @@ Key components of the project include:
 | Machine Learning  | scikit-learn        |
 | Web Scraping      | BeautifulSoup       |
 | Webpage (Static)  | HTML                |
+| UI                | streamlit           |
 
 ---
 
