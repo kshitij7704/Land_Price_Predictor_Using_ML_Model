@@ -146,6 +146,14 @@ Dharampeth        2400         0.03         3.0            68.10
 
 ---
 
+## 🎨 UI Preview
+
+![UI Preview](UI/UI_Output.png)
+
+*The app features a clean sidebar for inputs and a modern card layout for your predicted price.*
+
+---
+
 ## 📢 Future Enhancements
 
 - Integrate real-time data from public APIs or government land records.
