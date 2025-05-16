@@ -79,21 +79,28 @@ Key components of the project include:
 ## 📂 File Structure
 
 ```
-Land-Price-Predictor/
-├── data/
-│   └── generated_land_data.csv
-├── ml_generated_price.csv
-├── model/
-│   └── land_price_model.pkl
-├── scripts/
-│   ├── generate_data.py
-│   ├── scrape_webpage.py
-│   ├── train_model.py
-│   └── predict.py
-├── static_webpage/
-│   └── index.html
-├── visualizations/
-│   └── analysis_graphs.png
+Land_Price_Predictor_Using_ML_Model/
+├── Data Generation/
+│   ├── Data_Generation.ipynb
+│   └── land_price_data.csv
+├── EDA/
+│   ├── Data_Generation.ipynb
+│   └── land_price_data.csv
+├── Model/
+│   ├── Model.ipynb
+│   ├── ml_generated_price.csv
+│   ├── model.csv
+│   ├── predicted_prices_all.csv
+│   └── trained_model_all_data.joblib
+├── UI/
+│   ├── UI_Output.png
+│   ├── app.py
+│   ├── model.csv
+│   └── trained_model_all_data.joblib
+├── Web Scrapping/
+│   ├── Webscraping Data.ipynb
+│   ├── index.html
+│   └── model.csv
 ├── README.md
 └── requirements.txt
 ```
